@@ -1,0 +1,243 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.xiaoyuan.longer.Create_newsActivity">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="12dp"
+            card_view:cardCornerRadius="3dp"
+
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提示："
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:textColor="#7e7e7e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="9dp"
+                    android:text="不同的列表有不同的可编辑属性" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标题："
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:textColor="#7e7e7e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="9dp"
+                    android:text="在这里输入内容标题，长度20字以内" />
+
+                <EditText
+                    android:backgroundTint="#7e7e7e"
+                    android:id="@+id/edtTxt_crtnews_title"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="7dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类型："
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:textColor="#7e7e7e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="9dp"
+                    android:text="在这里输入类型，长度4字以内" />
+
+                <EditText
+                    android:backgroundTint="#7e7e7e"
+                    android:id="@+id/edtTxt_crtnews_type"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="7dp"
+                    android:maxLength="4"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="简介："
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:textColor="#7e7e7e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="9dp"
+                    android:text="在这里输入内容简介，长度50字内" />
+
+                <EditText
+                    android:backgroundTint="#7e7e7e"
+                    android:id="@+id/edtTxt_crtnews_info"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="7dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            card_view:cardCornerRadius="3dp"
+            card_view:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="1dp">
+                <ProgressBar
+                    android:id="@+id/progress_crtnews_progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:max="100"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/tv_crtnews_jd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="14dp"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="缩略图："
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_marginBottom="9dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="在这里可以上传展示在列表中的缩略图" />
+
+
+                <TextView
+                    android:id="@+id/tv_crtnews_addpic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="添加图片"
+                    android:layout_marginRight="12dp"
+                    android:textColor="#0099ed" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recy_crtnews"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_crtnews_up"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"
+            android:text="发布" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+

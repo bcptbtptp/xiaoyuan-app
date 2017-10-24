@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#8EE5EE"
+    android:orientation="vertical"
+    android:paddingBottom="30dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="35dp"
+    android:paddingTop="30dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="商品信息"
+        android:textColor="#008B8B"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="220dp"
+        android:layout_height="3dp"
+        android:background="#6fb4f5" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="图片：" />
+
+        <TextView
+            android:id="@+id/popup_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="null"
+            android:textColor="#828282" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="商品名：" />
+
+        <EditText
+            android:id="@+id/popup_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="null"
+            android:textColor="#828282" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="商品价格：" />
+
+        <EditText
+            android:id="@+id/popup_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="null"
+            android:textColor="#828282" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="商品信息：" />
+
+        <EditText
+            android:id="@+id/popup_teacher"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="null"
+            android:textColor="#828282" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/course_delete"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="#f16408"
+        android:text="提交"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+</LinearLayout>

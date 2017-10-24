@@ -1,0 +1,526 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="16dp"
+    tools:context="com.xiaoyuan.longer.News_Activity$PlaceholderFragment">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@mipmap/news_photo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MARINE LEGRAND"
+                        android:textColor="#ff8162"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+
+                        android:text="There are a million reasons to use Livo UI kit and build an awesome app with."
+                        android:textColor="#595968"
+                        android:textSize="13sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="bottom">
+
+                        <ImageView
+                            android:id="@+id/news_iv_like"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@mipmap/heart" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@+id/news_iv_like"
+                            android:text="Marine and 45 others"
+                            android:textColor="#bcbcbc"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_toLeftOf="@+id/news_tv_comment"
+                            android:src="@mipmap/comment" />
+
+                        <TextView
+                            android:id="@+id/news_tv_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right|bottom"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="12dp"
+                            android:text="5"
+                            android:textColor="#bcbcbc"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="#60696969" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@mipmap/news_photo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="1"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MARINE LEGRAND"
+                        android:textColor="#ff8162"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="3"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="There are a million reasons to use Livo UI kit and build an awesome app with."
+                        android:textColor="#595968"
+                        android:textSize="13sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="bottom">
+
+                        <ImageView
+                            android:id="@+id/news_iv_like"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@mipmap/heart" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@+id/news_iv_like"
+                            android:text="Marine and 45 others"
+                            android:textColor="#bcbcbc"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_toLeftOf="@+id/news_tv_comment"
+                            android:src="@mipmap/comment" />
+
+                        <TextView
+                            android:id="@+id/news_tv_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right|bottom"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="12dp"
+                            android:text="5"
+                            android:textColor="#bcbcbc"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="#60696969" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@mipmap/news_photo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="1"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MARINE LEGRAND"
+                        android:textColor="#ff8162"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="3"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="There are a million reasons to use Livo UI kit and build an awesome app with."
+                        android:textColor="#595968"
+                        android:textSize="13sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="bottom">
+
+                        <ImageView
+                            android:id="@+id/news_iv_like"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@mipmap/heart" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@+id/news_iv_like"
+                            android:text="Marine and 45 others"
+                            android:textColor="#bcbcbc"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_toLeftOf="@+id/news_tv_comment"
+                            android:src="@mipmap/comment" />
+
+                        <TextView
+                            android:id="@+id/news_tv_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right|bottom"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="12dp"
+                            android:text="5"
+                            android:textColor="#bcbcbc"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="#60696969" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@mipmap/news_photo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="1"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MARINE LEGRAND"
+                        android:textColor="#ff8162"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="3"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="There are a million reasons to use Livo UI kit and build an awesome app with."
+                        android:textColor="#595968"
+                        android:textSize="13sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="bottom">
+
+                        <ImageView
+                            android:id="@+id/news_iv_like"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@mipmap/heart" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@+id/news_iv_like"
+                            android:text="Marine and 45 others"
+                            android:textColor="#bcbcbc"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_toLeftOf="@+id/news_tv_comment"
+                            android:src="@mipmap/comment" />
+
+                        <TextView
+                            android:id="@+id/news_tv_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right|bottom"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="12dp"
+                            android:text="5"
+                            android:textColor="#bcbcbc"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="#60696969" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@mipmap/news_photo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MARINE LEGRAND"
+                        android:textColor="#ff8162"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="There are a million reasons to use Livo UI kit and build an awesome app with."
+                        android:textColor="#595968"
+                        android:textSize="13sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="bottom">
+
+                        <ImageView
+                            android:id="@+id/news_iv_like"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@mipmap/heart" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@+id/news_iv_like"
+                            android:text="Marine and 45 others"
+                            android:textColor="#bcbcbc"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_toLeftOf="@+id/news_tv_comment"
+                            android:src="@mipmap/comment" />
+
+                        <TextView
+                            android:id="@+id/news_tv_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right|bottom"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="12dp"
+                            android:text="5"
+                            android:textColor="#bcbcbc"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="#60696969" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@mipmap/news_photo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MARINE LEGRAND"
+                        android:textColor="#ff8162"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="There are a million reasons to use Livo UI kit and build an awesome app with."
+                        android:textColor="#595968"
+                        android:textSize="13sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="bottom">
+
+                        <ImageView
+                            android:id="@+id/news_iv_like"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@mipmap/heart" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@+id/news_iv_like"
+                            android:text="Marine and 45 others"
+                            android:textColor="#bcbcbc"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_toLeftOf="@+id/news_tv_comment"
+                            android:src="@mipmap/comment" />
+
+                        <TextView
+                            android:id="@+id/news_tv_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right|bottom"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="12dp"
+                            android:text="5"
+                            android:textColor="#bcbcbc"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="#60696969" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

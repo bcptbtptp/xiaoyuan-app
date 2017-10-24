@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Mystar_Activity">
+    <item
+        android:id="@+id/action_createstar"
+        android:orderInCategory="100"
+        android:title="新建星球"
+        app:showAsAction="never" />
+</menu>

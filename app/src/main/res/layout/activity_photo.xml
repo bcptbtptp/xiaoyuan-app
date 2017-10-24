@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:theme="@style/AppTheme2.AppBarOverlay"
+    tools:context=".Photo_Activity">
+
+    <RelativeLayout
+        android:id="@+id/select_re1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/xiangxi_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/pyq_pinglun" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="25dp"
+                android:text="6"
+                android:textColor="#bcbcbc"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/like" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="25dp"
+                android:text="20"
+                android:textColor="#bcbcbc"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/zhuanfa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="22dp"
+                android:text="6"
+                android:textColor="#bcbcbc"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:text="exif"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="3 of 11"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/photo_iv"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/photo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo_iv"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="10dp"
+        android:text="拍摄于2014年， 青海湖"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+</RelativeLayout>

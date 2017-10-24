@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiaoyuan.longer.Chat_Activityh">
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00bcd4"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            >
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/head" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="聊天界面"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:paddingTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+
+            android:layout_width="match_parent"
+            android:id="@+id/rv_main"
+            android:layout_height="wrap_content"
+
+            />
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/select_re1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#f9fafb">
+
+        <Button
+            android:id="@+id/library_select_bu"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/button_shape"
+            android:text="发送"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/edtTxt_chat_input"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/library_select_bu"
+            android:background="@drawable/search_edittext_shape2"
+            android:drawablePadding="5dp"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

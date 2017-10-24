@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="探索"
+        android:icon="@drawable/ic_search_white"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_chat"
+        android:orderInCategory="100"
+        android:title="聊天界面"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_create_pyq"
+        android:orderInCategory="100"
+        android:title="创建动态"
+        app:showAsAction="never" />
+
+
+</menu>

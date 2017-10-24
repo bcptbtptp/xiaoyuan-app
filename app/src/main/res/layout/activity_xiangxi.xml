@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiaoyuan.longer.Xiangxi_Activity">
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="详细"
+                android:textColor="#595968"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/xiangxi_zhuanfa" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_re1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f9fafb">
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:id="@+id/xiangxi_ll"
+            android:gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/pyq_pinglun_fish"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="8dp"
+                android:textColor="#bcbcbc"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/like_pressed"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="8dp"
+                android:textColor="#bcbcbc"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@id/xiangxi_ll"
+            android:background="@drawable/search_edittext_shape2"
+            android:drawablePadding="5dp"
+            android:imeOptions="actionSearch"
+            android:hint="写一条评论吧～"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:id="@+id/xiangxi_view"
+        android:layout_above="@+id/select_re1"
+        android:background="#20696969" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+        android:layout_above="@+id/xiangxi_view"
+        android:orientation="vertical">
+
+       <WebView
+           android:id="@+id/xiangxi_webview"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+       </WebView>
+    </LinearLayout>
+
+</RelativeLayout>
